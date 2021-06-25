@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crear cuenta</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form action="FormularioRegistro.php" method="post">
+	<fieldset>
+		<legend><strong>Crear cuenta</strong></legend>
+			Nombres *
+			<input type="text" name="nombres" value="" size="20">
+			&nbsp;&nbsp;
+			Apellidos *
+			<input type="text" name="apellidos" value="" size="20"> 
+			<br><br>
+			
+			Correo electrónico *
+			<input type="text" name="Correo" value="" size="35">
+			&nbsp;&nbsp;
+			Confirmar correo *
+			<input type="text" name="C_Correo" value="" size="35"> 
+			<br><br>
+			
+			Contraseña *
+			<input type="text" name="Contraseña" value="" size="20">
+			&nbsp;&nbsp;
+			Confirmar contraseña *
+			<input type="text" name="Confirmar contraseña" value="" size="20"> 
+			<br><br>
+			
+			<label for ="Fecha">Fecha de nacimiento *</label>
+			<br>
+			<input type="date" id="Fecha" name="Fecha"
+				value="dd-mm-aaaa"
+				min="01-01-1900" max="01-01-2021">
+			<br><br>
+			
+			<input type="radio" name="Género" value="Hombre">Hombre
+			<input type="radio" name="Género" value="Mujer">Mujer
+			<br><br>
+			
+			<input type="submit" name="Guardar" value="Guardar">
+			<input type="reset" name="Borrar" value="Borrar">
+		
+	</fieldset>
+</body>
+</html>
